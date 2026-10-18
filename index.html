@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reconciliaciones Sistémicas con Caballos · Formación intensiva</title>
+<meta name="description" content="Formación profesional intensiva residencial con Jimena Marchisio. 16 al 21 de febrero en Vedia, Buenos Aires. Mirada sistémica, trabajo corporal y facilitación asistida por caballos.">
+<meta property="og:title" content="Reconciliaciones Sistémicas con Caballos">
+<meta property="og:description" content="Formación intensiva residencial · 16 al 21 de febrero · Vedia, Buenos Aires">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f1e8; --bg-2:#efe4d4; --paper:#fbf8f3;
+  --ink:#2e2a26; --ink-2:#5b524a; --muted:#8a7d70;
+  --terra:#a8553a; --terra-2:#c47a55; --sand:#e6cfb3; --sage:#9fb39a;
+  --line:rgba(46,42,38,.12);
+  --serif:"Playfair Display",Georgia,serif;
+  --sans:"Montserrat",system-ui,sans-serif;
+  --wrap:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:400;line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.narrow{max-width:720px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.15;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4.2vw,46px);margin-bottom:24px}
+h3{font-size:24px;margin-bottom:12px}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--terra);font-weight:600;margin-bottom:18px;display:block}
+p+p{margin-top:14px}
+.lead{font-size:19px;color:var(--ink-2)}
+section{padding:110px 0}
+.center{text-align:center}
+.center .narrow{margin:0 auto}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:999px;font-weight:500;font-size:15px;letter-spacing:.04em;text-decoration:none;transition:transform .2s,background .2s,box-shadow .2s;cursor:pointer;border:0}
+.btn-primary{background:var(--terra);color:#fff;box-shadow:0 8px 24px -10px rgba(168,85,58,.7)}
+.btn-primary:hover{background:#934630;transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--bg)}
+.btn svg{width:18px;height:18px}
+
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
+nav.scrolled{background:rgba(247,241,232,.92);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{font-family:var(--serif);font-size:18px;text-decoration:none}
+.brand small{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:-2px}
+.nav-links{display:flex;gap:28px;align-items:center;font-size:14px}
+.nav-links a{text-decoration:none;color:var(--ink-2)}
+.nav-links a:hover{color:var(--terra)}
+.nav-links .btn{padding:10px 20px;font-size:13px;color:#fff}
+@media(max-width:860px){.nav-links a:not(.btn){display:none}}
+
+/* hero */
+.hero{min-height:100vh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:60px;padding:110px 0 60px;position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 10% 80%,rgba(196,122,85,.18),transparent 55%),radial-gradient(ellipse at 90% 10%,rgba(230,207,179,.6),transparent 50%);z-index:-1}
+.hero h1{font-size:clamp(42px,6vw,76px);margin-bottom:22px}
+.hero h1 em{font-style:italic;color:var(--terra)}
+.hero .sub{font-size:18px;color:var(--ink-2);max-width:520px}
+.hero .by{font-size:14px;color:var(--muted);margin-top:8px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin:32px 0 36px;font-size:14px;color:var(--ink-2)}
+.facts span{display:flex;align-items:center;gap:8px}
+.facts svg{width:17px;height:17px;color:var(--terra);flex:none}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px}
+.hero-img{position:relative;height:min(78vh,680px)}
+.hero-img img{width:100%;height:100%;object-fit:cover;border-radius:220px 220px 14px 14px;box-shadow:0 40px 80px -40px rgba(80,40,20,.5)}
+.hero-img .badge{position:absolute;left:-30px;bottom:50px;background:var(--paper);padding:18px 22px;border-radius:14px;box-shadow:0 20px 40px -20px rgba(80,40,20,.35);font-size:13px;line-height:1.4;max-width:220px}
+.hero-img .badge b{display:block;font-family:var(--serif);font-size:22px;font-weight:500;color:var(--terra)}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;gap:40px;padding-top:100px;min-height:auto}
+  .hero-img{height:440px;order:-1}
+  .hero-img img{border-radius:180px 180px 14px 14px}
+  .hero-img .badge{left:12px;bottom:16px}
+}
+
+/* quote band */
+.quote{background:var(--ink);color:var(--bg);padding:90px 0}
+.quote blockquote{font-family:var(--serif);font-size:clamp(26px,3.6vw,40px);line-height:1.35;font-style:italic;max-width:860px;margin:0 auto;text-align:center}
+.quote cite{display:block;margin-top:22px;font-style:normal;font-family:var(--sans);font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--sand)}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.split.rev .split-img{order:2}
+.split-img img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px}
+@media(max-width:860px){.split{grid-template-columns:1fr;gap:40px}.split.rev .split-img{order:0}.split-img img{aspect-ratio:4/3}}
+.stack{list-style:none;margin:22px 0;border-left:2px solid var(--sand);padding-left:22px}
+.stack li{font-family:var(--serif);font-size:21px;color:var(--ink-2);padding:3px 0}
+.highlight{font-family:var(--serif);font-size:23px;line-height:1.4;color:var(--terra);margin-top:26px;font-style:italic}
+
+/* what */
+.what{background:var(--paper)}
+.nots{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:44px 0}
+.nots div{border:1px solid var(--line);border-radius:12px;padding:26px;text-align:center;font-family:var(--serif);font-size:19px;color:var(--ink-2)}
+.nots div::before{content:"No busca";display:block;font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.recon{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+.recon div{background:var(--bg-2);border-radius:12px;padding:26px;text-align:center;font-size:15px;color:var(--ink-2)}
+.recon div b{display:block;font-family:var(--serif);font-weight:500;font-size:24px;color:var(--ink);margin-top:4px}
+.recon div.yes{background:var(--terra);color:#f8e6da}
+.recon div.yes b{color:#fff}
+@media(max-width:700px){.nots,.recon{grid-template-columns:1fr}}
+.wide-img{margin-top:60px;border-radius:14px;overflow:hidden}
+
+/* pillars */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+.pillar{background:var(--paper);border-radius:16px;padding:40px 32px;position:relative;overflow:hidden}
+.pillar .num{font-family:var(--serif);font-size:64px;line-height:1;color:var(--sand);position:absolute;right:22px;top:16px}
+.pillar h3{font-size:28px;margin-bottom:16px}
+.pillar p{font-size:15.5px;color:var(--ink-2)}
+.pillar .tags{margin-top:16px;display:flex;flex-wrap:wrap;gap:6px}
+.pillar .tags span{font-size:12px;background:var(--bg-2);border-radius:99px;padding:4px 12px;color:var(--ink-2)}
+.pillar.horse{background:var(--ink);color:var(--bg)}
+.pillar.horse p{color:#d8ccbf}
+.pillar.horse .num{color:rgba(230,207,179,.25)}
+.pillar.horse em{color:var(--sand);font-family:var(--serif);font-size:19px;display:block;margin-top:16px}
+@media(max-width:900px){.pillars{grid-template-columns:1fr}}
+
+/* principles */
+.principles{background:var(--paper)}
+.pr-list{margin-top:50px;border-top:1px solid var(--line)}
+.pr{border-bottom:1px solid var(--line)}
+.pr summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:70px 1fr 40px;align-items:center;padding:28px 0;gap:10px}
+.pr summary::-webkit-details-marker{display:none}
+.pr summary .n{font-family:var(--serif);font-size:34px;color:var(--terra-2)}
+.pr summary h3{margin:0;font-size:clamp(20px,2.4vw,27px)}
+.pr summary .pm{width:36px;height:36px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:transform .3s,background .3s}
+.pr[open] summary .pm{transform:rotate(45deg);background:var(--terra);color:#fff;border-color:var(--terra)}
+.pr .body{display:grid;grid-template-columns:1fr 1.25fr;gap:44px;padding:0 0 40px 80px;align-items:start}
+.pr .body p{color:var(--ink-2)}
+.pr .body img{border-radius:10px;box-shadow:0 20px 40px -25px rgba(80,40,20,.5);cursor:zoom-in}
+@media(max-width:860px){.pr summary{grid-template-columns:48px 1fr 36px}.pr .body{grid-template-columns:1fr;padding-left:0;gap:24px}}
+
+/* integration */
+.integration img{border-radius:16px;margin:46px auto 0;box-shadow:0 40px 80px -40px rgba(80,40,20,.45);cursor:zoom-in}
+.int-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px;text-align:left}
+.int-grid div{border-top:2px solid var(--terra-2);padding-top:14px}
+.int-grid b{font-family:var(--serif);font-weight:500;font-size:20px;display:block}
+.int-grid span{font-size:14px;color:var(--ink-2)}
+@media(max-width:800px){.int-grid{grid-template-columns:1fr 1fr}}
+
+/* learn */
+.learn-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;margin-top:44px}
+.learn-grid li{list-style:none;display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--line);font-size:16px}
+.learn-grid li svg{flex:none;width:22px;height:22px;color:var(--sage);margin-top:2px}
+@media(max-width:760px){.learn-grid{grid-template-columns:1fr}}
+
+/* audience */
+.audience{background:var(--bg-2)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:36px 0 30px}
+.chips span{background:var(--paper);border-radius:99px;padding:10px 20px;font-size:15px}
+
+/* residential */
+.res-band{position:relative;height:420px;overflow:hidden}
+.res-band img{width:100%;height:100%;object-fit:cover}
+.res-band .over{position:absolute;inset:0;background:linear-gradient(180deg,rgba(46,42,38,0) 30%,rgba(46,42,38,.65));display:flex;align-items:flex-end}
+.res-band h2{color:#fff;margin-bottom:46px;max-width:640px}
+.includes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.includes div{background:var(--paper);border-radius:12px;padding:22px;display:flex;gap:14px;align-items:center;font-size:15px}
+.includes svg{width:24px;height:24px;color:var(--terra);flex:none}
+@media(max-width:760px){.includes{grid-template-columns:1fr}.res-band{height:300px}}
+.venue{margin-top:44px;padding:28px 30px;border:1px dashed var(--terra-2);border-radius:14px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.venue b{font-family:var(--serif);font-weight:500;font-size:22px;display:block}
+.venue span{color:var(--ink-2);font-size:15px}
+.venue a{color:var(--terra);font-weight:500;font-size:15px}
+
+/* team */
+.team{background:var(--paper)}
+.people{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;margin-top:50px}
+.person{border-radius:16px;padding:42px;background:var(--bg)}
+.person .role{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);font-weight:600}
+.person h3{font-size:34px;margin:10px 0 6px}
+.person .org{font-family:var(--serif);font-style:italic;color:var(--muted);margin-bottom:18px}
+.person p{color:var(--ink-2);font-size:16px}
+.person.lead-p{background:var(--ink);color:var(--bg)}
+.person.lead-p p{color:#d8ccbf}
+.person.lead-p .role{color:var(--sand)}
+@media(max-width:860px){.people{grid-template-columns:1fr}.person{padding:32px 26px}}
+
+/* science */
+.sci{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.sci ul{list-style:none;margin-top:28px}
+.sci li{padding:14px 0;border-bottom:1px solid var(--line);font-family:var(--serif);font-size:20px;display:flex;gap:16px;align-items:baseline}
+.sci li small{font-family:var(--sans);font-size:12px;color:var(--muted)}
+.sci img{border-radius:14px;cursor:zoom-in}
+@media(max-width:860px){.sci{grid-template-columns:1fr;gap:40px}}
+
+/* closing */
+.closing{position:relative;color:#fff;text-align:center;padding:150px 0;overflow:hidden}
+.closing>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.closing::after{content:"";position:absolute;inset:0;background:rgba(40,28,20,.55);z-index:-1}
+.closing h2{font-size:clamp(34px,5vw,58px)}
+.closing p{font-size:19px;color:#f1e6da;max-width:640px;margin:0 auto}
+.closing .final{font-family:var(--serif);font-style:italic;font-size:24px;margin-top:30px;color:#fff}
+
+/* pricing */
+.price-card{max-width:760px;margin:50px auto 0;background:var(--paper);border-radius:22px;padding:56px 48px;text-align:center;box-shadow:0 40px 80px -50px rgba(80,40,20,.5);position:relative}
+.price-card .dates{font-family:var(--serif);font-size:22px;margin-bottom:6px}
+.price-card .meta{color:var(--muted);font-size:14px;letter-spacing:.06em}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:38px 0}
+.prices div{border:1px solid var(--line);border-radius:14px;padding:26px 20px}
+.prices div.best{border:2px solid var(--terra);background:#fff;position:relative}
+.prices div.best::before{content:"Recomendado";position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--terra);color:#fff;font-size:11px;letter-spacing:.15em;text-transform:uppercase;padding:4px 12px;border-radius:99px}
+.prices .label{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+.prices .amt{font-family:var(--serif);font-size:46px;line-height:1.1;margin:8px 0 4px}
+.prices .amt small{font-size:18px;color:var(--muted)}
+.prices .note{font-size:13px;color:var(--muted)}
+.limited{display:inline-block;background:var(--bg-2);border-radius:99px;padding:6px 16px;font-size:13px;margin-bottom:26px}
+.price-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+@media(max-width:600px){.prices{grid-template-columns:1fr}.price-card{padding:42px 22px}}
+
+footer{background:var(--ink);color:#bfb3a6;padding:50px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer b{font-family:var(--serif);font-weight:500;color:var(--bg);font-size:18px}
+
+/* floating whatsapp */
+.wa-float{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.4);z-index:60;transition:transform .2s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;color:#fff}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(20,15,10,.9);display:none;align-items:center;justify-content:center;z-index:100;padding:20px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-height:92vh;border-radius:8px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4M12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8m8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.6-8.4"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 18V7M3 13h18v5M21 13a3 3 0 0 0-3-3h-7v3"/><circle cx="7" cy="11" r="1.5"/></symbol>
+  <symbol id="i-food" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 3v8a2 2 0 0 0 2 2v8M5 3v5M9 3v5M17 21V3c-2 1-3 4-3 7h3"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-horse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 21v-5c0-3 2-5 4-6l-2-4 3 1 2-3 1 3c3 1 5 4 5 7l-2 1-2-2-2 1v7"/></symbol>
+</svg>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="#" class="brand">Reconciliaciones Sistémicas<small>con Caballos · MindCompass</small></a>
+    <div class="nav-links">
+      <a href="#metodo">El método</a>
+      <a href="#principios">Principios</a>
+      <a href="#experiencia">La experiencia</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#reserva">Inversión</a>
+      <a class="btn btn-primary js-wa" href="#reserva">Quiero información</a>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap hero">
+  <div class="rv">
+    <span class="eyebrow">Formación profesional intensiva · Residencial</span>
+    <h1>Reconciliaciones Sistémicas <em>con Caballos</em></h1>
+    <p class="sub">Una metodología experiencial que integra mirada sistémica, trabajo corporal y facilitación asistida por caballos.</p>
+    <p class="by">Creada y dirigida por Jimena Marchisio · by MindCompass</p>
+    <div class="facts">
+      <span><svg><use href="#i-cal"/></svg>16 al 21 de febrero</span>
+      <span><svg><use href="#i-pin"/></svg>Vedia, Buenos Aires</span>
+      <span><svg><use href="#i-home"/></svg>Convivencia con pensión completa</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn btn-primary js-wa" href="#reserva"><svg><use href="#i-wa"/></svg>Quiero recibir información</a>
+      <a class="btn btn-ghost" href="#metodo">Conocer el método</a>
+    </div>
+  </div>
+  <div class="hero-img rv">
+    <img src="img/hero-caballo.jpg" alt="Una mano apoyada sobre el lomo de un caballo al atardecer">
+    <div class="badge"><b>6 días</b>de inmersión en contacto con la naturaleza y los caballos</div>
+  </div>
+</header>
+
+<section class="quote">
+  <div class="wrap rv">
+    <blockquote>“Dejar de luchar con aquello de lo que estamos hechos.”
+      <cite>La transformación no comienza cuando comprendemos nuestra historia. Comienza cuando dejamos de pelear con ella.</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section id="metodo">
+  <div class="wrap split">
+    <div class="split-img rv"><img src="img/manos-tierra.jpg" alt="Manos apoyadas sobre la tierra" loading="lazy"></div>
+    <div class="rv">
+      <span class="eyebrow">La reconciliación no es explicar. Es experimentar.</span>
+      <h2>La mayoría de las personas no necesitan más explicaciones.</h2>
+      <p class="lead">Necesitan una experiencia diferente.</p>
+      <p>Muchas personas conocen perfectamente su historia.</p>
+      <ul class="stack">
+        <li>Pueden explicar su infancia.</li>
+        <li>Pueden describir sus heridas.</li>
+        <li>Pueden identificar sus patrones.</li>
+      </ul>
+      <p>Y, sin embargo, continúan atrapadas en las mismas dinámicas. <strong>Comprender no siempre transforma.</strong></p>
+      <p class="highlight">La transformación ocurre cuando la experiencia alcanza aquello que la explicación no consigue tocar.</p>
+      <p style="margin-top:20px">Por ello el cuerpo ocupa un lugar central. Los caballos participan como observadores y facilitadores fenomenológicos de aquello que permanece fuera de la conciencia verbal.</p>
+    </div>
+  </div>
+</section>
+
+<section class="what">
+  <div class="wrap center">
+    <div class="narrow rv">
+      <span class="eyebrow">El enfoque</span>
+      <h2>¿Qué son las Reconciliaciones Sistémicas con Caballos?</h2>
+      <p class="lead">Un abordaje fenomenológico, corporal y experiencial orientado a facilitar procesos de integración personal, somática y relacional.</p>
+      <p>Su propósito es favorecer un encuentro honesto con la realidad para que la persona pueda dejar de luchar contra aquello que ya forma parte de su historia y de su cuerpo.</p>
+    </div>
+    <div class="nots rv">
+      <div>cambiar el pasado</div>
+      <div>justificar el daño</div>
+      <div>imponer una interpretación</div>
+    </div>
+    <div class="recon rv">
+      <div>La reconciliación no significa<b>aprobar</b></div>
+      <div>La reconciliación no significa<b>olvidar</b></div>
+      <div class="yes">La reconciliación significa<b>incluir</b></div>
+    </div>
+    <p class="highlight rv" style="max-width:720px;margin:40px auto 0">Cuando dejamos de rechazar partes de nuestra historia, recuperamos energía para construir nuestro futuro.</p>
+    <div class="wide-img rv"><img src="img/slide-reconciliacion.jpg" alt="El destino final es la reconciliación. No la explicación. No la culpa. No la búsqueda de responsables." loading="lazy"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="center"><div class="narrow rv">
+      <span class="eyebrow">Los tres pilares del método</span>
+      <h2>Sistema, cuerpo y caballo</h2>
+    </div></div>
+    <div class="pillars">
+      <article class="pillar rv">
+        <span class="num">01</span>
+        <h3>El sistema</h3>
+        <p>Todo ser humano forma parte de múltiples sistemas. Comprender nuestra posición dentro de ellos permite observar dinámicas que condicionan nuestra forma de sentir, vincularnos y actuar.</p>
+        <div class="tags"><span>Familia</span><span>Cultura</span><span>Historia</span><span>Relaciones</span></div>
+      </article>
+      <article class="pillar rv">
+        <span class="num">02</span>
+        <h3>El cuerpo</h3>
+        <p>El cuerpo conserva información que muchas veces la narrativa no alcanza a expresar. La reconciliación auténtica se refleja en el cuerpo mucho antes de poder explicarse con palabras.</p>
+        <div class="tags"><span>Postura</span><span>Respiración</span><span>Tensión muscular</span><span>Distancia interpersonal</span></div>
+      </article>
+      <article class="pillar horse rv">
+        <span class="num">03</span>
+        <h3>El caballo</h3>
+        <p>No analiza. No interpreta. No juzga. Tampoco responde a una historia verbal. Responde a la coherencia entre intención, emoción y presencia. Por eso puede convertirse en un espejo extraordinario de lo que realmente está ocurriendo dentro de cada persona.</p>
+        <em>El caballo muestra lo que la palabra no puede nombrar.</em>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="principles" id="principios">
+  <div class="wrap">
+    <div class="rv" style="max-width:720px">
+      <span class="eyebrow">El corazón del método</span>
+      <h2>Los seis principios fundamentales</h2>
+      <p class="lead">Tocá cada principio para descubrirlo.</p>
+    </div>
+    <div class="pr-list rv">
+      <details class="pr" open>
+        <summary><span class="n">1</span><h3>La realidad precede a la transformación</h3><span class="pm">+</span></summary>
+        <div class="body">
+          <div><p>La transformación profunda comienza cuando dejamos de resistir aquello que ya ocurrió.</p><p><strong>Aceptar no es resignarse.</strong> Aceptar es partir de la realidad para construir una nueva relación con ella.</p></div>
+          <img src="img/slide-p1.jpg" alt="Principio 1: Resignación frente a Aceptación radical" loading="lazy">
+        </div>
+      </details>
+      <details class="pr">
+        <summary><span class="n">2</span><h3>La vida se recibe</h3><span class="pm">+</span></summary>
+        <div class="body">
+          <div><p>Todos hemos recibido la vida a través de quienes nos precedieron.</p><p>Reconocer este hecho no implica justificar conductas dañinas. Implica reconocer el origen que nos abrió la puerta de la existencia.</p></div>
+          <img src="img/slide-p2.jpg" alt="Principio 2: ¿Puedo reconocer aquello que recibí sin negar aquello que me faltó?" loading="lazy">
+        </div>
+      </details>
+      <details class="pr">
+        <summary><span class="n">3</span><h3>Lo que rechazo fuera aparece dentro</h3><span class="pm">+</span></summary>
+        <div class="body">
+          <div><p>Con frecuencia aquello que rechazamos intensamente en otros permanece activo en nosotros mismos.</p><p>La reconciliación con la historia es también una reconciliación con la propia identidad.</p></div>
+          <img src="img/slide-p3.jpg" alt="Principio 3: Madre, Yo, Padre" loading="lazy">
+        </div>
+      </details>
+      <details class="pr">
+        <summary><span class="n">4</span><h3>El cuerpo expresa aquello que la mente desconoce</h3><span class="pm">+</span></summary>
+        <div class="body">
+          <div><p>La reconciliación es con uno mismo.</p><p>La integración ocurre cuando la narrativa y la experiencia corporal dejan de estar en conflicto.</p></div>
+          <img src="img/slide-p4.jpg" alt="Principio 4: La consciencia narrativa y la experiencia corporal no siempre coinciden" loading="lazy">
+        </div>
+      </details>
+      <details class="pr">
+        <summary><span class="n">5</span><h3>La transformación ocurre en la experiencia</h3><span class="pm">+</span></summary>
+        <div class="body">
+          <div><p>Comprender no basta. El cambio sostenible requiere experiencia vivida.</p><p><strong>Práctica. Presencia. Participación.</strong></p></div>
+          <img src="img/slide-p5.jpg" alt="Principio 5: No es interpretar, es observar" loading="lazy">
+        </div>
+      </details>
+      <details class="pr">
+        <summary><span class="n">6</span><h3>El caballo como facilitador fenomenológico</h3><span class="pm">+</span></summary>
+        <div class="body">
+          <div><p>El caballo refleja aquello que permanece oculto tras los discursos y explicaciones. Sus movimientos nos brindan información valiosa sobre el estado de nuestro sistema nervioso, la coherencia corporal y los patrones de comportamiento.</p>
+          <ul class="stack" style="margin-top:18px"><li style="font-size:17px">Diferencia entre vínculo y relación.</li><li style="font-size:17px">La coherencia cardíaca como base de la autorregulación.</li><li style="font-size:17px">Recalibración energética en las reconciliaciones sistémicas.</li></ul></div>
+          <img src="img/slide-p6.jpg" alt="Principio 6: El caballo como facilitador fenomenológico" loading="lazy">
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="integration center">
+  <div class="wrap">
+    <div class="narrow rv">
+      <span class="eyebrow">La integración en la pista</span>
+      <h2>Donde las tres dimensiones se encuentran</h2>
+      <p class="lead">Cuando estas dimensiones se encuentran, emerge el espacio para la reconciliación.</p>
+    </div>
+    <img class="rv" src="img/slide-integracion.jpg" alt="La integración: el sistema, el cuerpo y el caballo alrededor de la reconciliación" loading="lazy">
+    <div class="int-grid rv">
+      <div><b>El sistema</b><span>La realidad y la biología</span></div>
+      <div><b>El cuerpo</b><span>La identidad y la fisiología</span></div>
+      <div><b>El caballo</b><span>La experiencia y el reflejo fenomenológico</span></div>
+      <div><b>Coherencia cardíaca</b><span>La base de la autorregulación</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--paper)">
+  <div class="wrap">
+    <div class="rv" style="max-width:720px">
+      <span class="eyebrow">Programa</span>
+      <h2>¿Qué aprenderás?</h2>
+    </div>
+    <ul class="learn-grid rv">
+      <li><svg><use href="#i-check"/></svg>Comprender los fundamentos de las reconciliaciones sistémicas.</li>
+      <li><svg><use href="#i-check"/></svg>Identificar patrones corporales vinculados a la historia relacional.</li>
+      <li><svg><use href="#i-check"/></svg>Utilizar el caballo como facilitador fenomenológico.</li>
+      <li><svg><use href="#i-check"/></svg>Diseñar experiencias vivenciales de aprendizaje y transformación.</li>
+      <li><svg><use href="#i-check"/></svg>Desarrollar una mirada basada en observación, presencia y respeto por la experiencia.</li>
+      <li><svg><use href="#i-check"/></svg>Integrar fundamentos de la psicología, la teoría del apego, la regulación emocional y las neurociencias contemporáneas.</li>
+      <li><svg><use href="#i-check"/></svg>Aprender coherencia cardíaca y recalibración energética individual y grupal.</li>
+      <li><svg><use href="#i-check"/></svg>Aplicar recursos prácticos en contextos educativos, terapéuticos y de acompañamiento humano.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="audience center">
+  <div class="wrap">
+    <div class="narrow rv">
+      <span class="eyebrow">¿A quién está dirigida?</span>
+      <h2>Para quienes desean facilitar procesos de transformación desde la presencia, el cuerpo y la realidad</h2>
+    </div>
+    <div class="chips rv">
+      <span>Psicólogos</span><span>Terapeutas</span><span>Coaches</span><span>Educadores</span><span>Facilitadores</span><span>Profesionales ecuestres</span><span>Especialistas en desarrollo humano</span><span>Profesionales interesados en metodologías experienciales</span>
+    </div>
+    <p class="lead narrow rv">Y también a personas que deseen iniciar un proceso profundo de desarrollo personal a través del cuerpo, la naturaleza y la interacción con caballos.</p>
+  </div>
+</section>
+
+<div class="res-band" id="experiencia">
+  <img src="img/paisaje.jpg" alt="Una mujer junto a un caballo en el campo" loading="lazy">
+  <div class="over"><div class="wrap"><h2 class="rv">La experiencia residencial</h2></div></div>
+</div>
+<section style="padding-top:80px">
+  <div class="wrap">
+    <div class="split rev">
+      <div class="split-img rv"><img src="img/ojo-caballo.jpg" alt="Primer plano del ojo de un caballo" loading="lazy"></div>
+      <div class="rv">
+        <p class="lead">Durante seis días compartiremos mucho más que un proceso formativo. <strong>Compartiremos una experiencia.</strong></p>
+        <ul class="stack">
+          <li>Un entorno natural cuidadosamente seleccionado.</li>
+          <li>Espacios de aprendizaje vivencial.</li>
+          <li>Prácticas en pista.</li>
+          <li>Momentos de reflexión e integración.</li>
+          <li>Convivencia grupal.</li>
+        </ul>
+        <p>Y el tiempo necesario para que cada participante pueda atravesar su propio proceso.</p>
+      </div>
+    </div>
+    <h3 class="rv" style="margin-top:70px">Incluye</h3>
+    <div class="includes rv">
+      <div><svg><use href="#i-sun"/></svg>Formación presencial intensiva</div>
+      <div><svg><use href="#i-horse"/></svg>Trabajo práctico con caballos</div>
+      <div><svg><use href="#i-book"/></svg>Materiales de estudio</div>
+      <div><svg><use href="#i-bed"/></svg>Alojamiento</div>
+      <div><svg><use href="#i-food"/></svg>Pensión completa</div>
+      <div><svg><use href="#i-award"/></svg>Certificado de participación</div>
+    </div>
+    <div class="venue rv">
+      <div><b>Casa La Providencia</b><span>Casa de campo en Vedia, provincia de Buenos Aires, Argentina.</span></div>
+      <a href="https://www.casalaprovidencia.com.ar" target="_blank" rel="noopener">Conocer el lugar →</a>
+    </div>
+  </div>
+</section>
+
+<section class="team" id="equipo">
+  <div class="wrap">
+    <div class="rv" style="max-width:720px">
+      <span class="eyebrow">Quién dirige la formación</span>
+      <h2>Equipo docente</h2>
+    </div>
+    <div class="people">
+      <article class="person lead-p rv">
+        <span class="role">Directora · Creadora del método</span>
+        <h3>Jimena Marchisio</h3>
+        <p class="org">Fundadora de MindCompass</p>
+        <p>Docente universitaria, profesional ecuestre y diseñadora de experiencias de aprendizaje asistidas por caballos. Creadora de la metodología Reconciliaciones Sistémicas con Caballos.</p>
+        <p>Su trabajo integra una mirada sistémica, el aprendizaje experiencial, terapia postural, prácticas ecuestres y fundamentos contemporáneos de la psicología y las neurociencias.</p>
+      </article>
+      <article class="person rv">
+        <span class="role">Docente invitada</span>
+        <h3>Maika Castillo</h3>
+        <p class="org">Fundadora de Sentir Caballos</p>
+        <p>Docente colaboradora. Aporta su experiencia en acompañamiento humano, sanación con caballos, coherencia cardíaca y reequilibrio energético.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap sci">
+    <div class="rv">
+      <span class="eyebrow">Fundamentación científica</span>
+      <h2>Raíces profundas del método</h2>
+      <p class="lead">Lejos de constituir una propuesta esotérica o interpretativa, este método se apoya en aportes contemporáneos de la psicología y las neurociencias.</p>
+      <ul>
+        <li>Regulación emocional y ACT <small>Hayes, Linehan</small></li>
+        <li>Teoría del Apego <small>Bowlby</small></li>
+        <li>Neurobiología Interpersonal <small>Siegel</small></li>
+        <li>Cognición Corporizada</li>
+        <li>Teoría Polivagal</li>
+        <li>Aprendizaje Experiencial</li>
+        <li>Comunicación no verbal y facilitación asistida por equinos</li>
+        <li>Recalibración energética</li>
+      </ul>
+    </div>
+    <img class="rv" src="img/slide-raices.jpg" alt="Raíces profundas del método" loading="lazy">
+  </div>
+</section>
+
+<section class="closing">
+  <img src="img/slide-cierre.jpg" alt="" loading="lazy">
+  <div class="wrap rv">
+    <h2>No venimos a cambiar la historia</h2>
+    <p>Venimos a cambiar la relación que mantenemos con ella. Aquello que rechazamos continúa condicionándonos. Aquello que podemos incluir comienza a transformarnos.</p>
+    <p class="final">Una invitación a dejar de luchar para poder avanzar.<br>A regresar a la fuente de quienes somos.<br>A reconciliarnos con la vida.</p>
+  </div>
+</section>
+
+<section id="reserva">
+  <div class="wrap center">
+    <div class="narrow rv">
+      <span class="eyebrow">Reservá tu plaza</span>
+      <h2>Formación Profesional Intensiva Residencial</h2>
+    </div>
+    <div class="price-card rv">
+      <p class="dates">16 al 21 de febrero · Vedia, Buenos Aires</p>
+      <p class="meta">6 días · Alojamiento y pensión completa incluidos</p>
+      <div class="prices">
+        <div class="best">
+          <span class="label">Pago anticipado</span>
+          <div class="amt">USD 1.200</div>
+          <span class="note">Ahorrás USD 150</span>
+        </div>
+        <div>
+          <span class="label">Valor de la formación</span>
+          <div class="amt">USD 1.350</div>
+          <span class="note">Inversión total</span>
+        </div>
+      </div>
+      <span class="limited">Plazas limitadas</span>
+      <div class="price-actions">
+        <a class="btn btn-primary js-wa" data-msg="Hola Jimena! Quiero reservar mi plaza en la formación de Reconciliaciones Sistémicas con Caballos (16 al 21 de febrero)." href="#reserva"><svg><use href="#i-wa"/></svg>Hablar por WhatsApp</a>
+        <a class="btn btn-ghost js-wa" data-msg="Hola Jimena! Me gustaría recibir el dossier completo de la formación de Reconciliaciones Sistémicas con Caballos." href="#reserva">Solicitar dossier completo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>Reconciliaciones Sistémicas con Caballos</b><br>Una metodología creada por Jimena Marchisio · MindCompass</div>
+    <div>16 al 21 de febrero · Vedia, Buenos Aires, Argentina</div>
+  </div>
+</footer>
+
+<a class="wa-float js-wa" href="#reserva" aria-label="Escribir por WhatsApp"><svg><use href="#i-wa"/></svg></a>
+<div class="lb" id="lb"><img alt=""></div>
+
+<script>
+// Número de WhatsApp en formato internacional, sin "+" ni espacios (ej: 5491112345678)
+const WHATSAPP = "";
+const DEFAULT_MSG = "Hola Jimena! Quiero recibir información sobre la formación de Reconciliaciones Sistémicas con Caballos (16 al 21 de febrero).";
+
+if (WHATSAPP) {
+  document.querySelectorAll(".js-wa").forEach(a => {
+    a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(a.dataset.msg || DEFAULT_MSG);
+    a.target = "_blank";
+    a.rel = "noopener";
+  });
+}
+
+const nav = document.getElementById("nav");
+const onScroll = () => nav.classList.toggle("scrolled", scrollY > 30);
+addEventListener("scroll", onScroll, { passive: true });
+onScroll();
+
+const io = new IntersectionObserver(entries => entries.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+}), { threshold: 0.12 });
+document.querySelectorAll(".rv").forEach(el => io.observe(el));
+
+const lb = document.getElementById("lb");
+document.querySelectorAll(".pr .body img, .integration img, .sci img").forEach(img => {
+  img.addEventListener("click", () => { lb.querySelector("img").src = img.src; lb.classList.add("on"); });
+});
+lb.addEventListener("click", () => lb.classList.remove("on"));
+addEventListener("keydown", e => { if (e.key === "Escape") lb.classList.remove("on"); });
+</script>
+</body>
+</html>
