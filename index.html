@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Reconciliaciones Sistémicas con Caballos · Formación intensiva</title>
-<meta name="description" content="Formación profesional intensiva residencial con Jimena Marchisio. 16 al 21 de febrero en Vedia, Buenos Aires. Mirada sistémica, trabajo corporal y facilitación asistida por caballos.">
+<meta name="description" content="Formación profesional intensiva residencial con Jimena Marchisio. 16 al 21 de febrero de 2027 en Vedia, Buenos Aires. Mirada sistémica, trabajo corporal y facilitación asistida por caballos.">
 <meta property="og:title" content="Reconciliaciones Sistémicas con Caballos">
-<meta property="og:description" content="Formación intensiva residencial · 16 al 21 de febrero · Vedia, Buenos Aires">
+<meta property="og:description" content="Formación intensiva residencial · 16 al 21 de febrero de 2027 · Vedia, Buenos Aires">
 <meta property="og:image" content="img/og.jpg">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -214,6 +214,9 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:7
 .prices .note{font-size:13px;color:var(--muted)}
 .limited{display:inline-block;background:var(--bg-2);border-radius:99px;padding:6px 16px;font-size:13px;margin-bottom:26px}
 .price-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.wa-nums{margin-top:24px;font-size:14px;color:var(--muted)}
+.wa-nums a{color:var(--terra);font-weight:500;text-decoration:none;white-space:nowrap}
+footer a{color:var(--sand);text-decoration:none;white-space:nowrap}
 @media(max-width:600px){.prices{grid-template-columns:1fr}.price-card{padding:42px 22px}}
 
 footer{background:var(--ink);color:#bfb3a6;padding:50px 0;font-size:14px}
@@ -273,7 +276,7 @@ footer b{font-family:var(--serif);font-weight:500;color:var(--bg);font-size:18px
     <p class="sub">Una metodología experiencial que integra mirada sistémica, trabajo corporal y facilitación asistida por caballos.</p>
     <p class="by">Creada y dirigida por Jimena Marchisio · by MindCompass</p>
     <div class="facts">
-      <span><svg><use href="#i-cal"/></svg>16 al 21 de febrero</span>
+      <span><svg><use href="#i-cal"/></svg>16 al 21 de febrero de 2027</span>
       <span><svg><use href="#i-pin"/></svg>Vedia, Buenos Aires</span>
       <span><svg><use href="#i-home"/></svg>Convivencia con pensión completa</span>
     </div>
@@ -569,7 +572,7 @@ footer b{font-family:var(--serif);font-weight:500;color:var(--bg);font-size:18px
       <h2>Formación Profesional Intensiva Residencial</h2>
     </div>
     <div class="price-card rv">
-      <p class="dates">16 al 21 de febrero · Vedia, Buenos Aires</p>
+      <p class="dates">16 al 21 de febrero de 2027 · Vedia, Buenos Aires</p>
       <p class="meta">6 días · Alojamiento y pensión completa incluidos</p>
       <div class="prices">
         <div class="best">
@@ -585,9 +588,10 @@ footer b{font-family:var(--serif);font-weight:500;color:var(--bg);font-size:18px
       </div>
       <span class="limited">Plazas limitadas</span>
       <div class="price-actions">
-        <a class="btn btn-primary js-wa" data-msg="Hola Jimena! Quiero reservar mi plaza en la formación de Reconciliaciones Sistémicas con Caballos (16 al 21 de febrero)." href="#reserva"><svg><use href="#i-wa"/></svg>Hablar por WhatsApp</a>
+        <a class="btn btn-primary js-wa" data-msg="Hola Jimena! Quiero reservar mi plaza en la formación de Reconciliaciones Sistémicas con Caballos (16 al 21 de febrero de 2027)." href="#reserva"><svg><use href="#i-wa"/></svg>Hablar por WhatsApp</a>
         <a class="btn btn-ghost js-wa" data-msg="Hola Jimena! Me gustaría recibir el dossier completo de la formación de Reconciliaciones Sistémicas con Caballos." href="#reserva">Solicitar dossier completo</a>
       </div>
+      <p class="wa-nums">WhatsApp: <a href="https://wa.me/34611558575" target="_blank" rel="noopener">+34 611 55 85 75</a> · <a href="https://wa.me/50765637838" target="_blank" rel="noopener">+507 6563-7838</a></p>
     </div>
   </div>
 </section>
@@ -595,7 +599,7 @@ footer b{font-family:var(--serif);font-weight:500;color:var(--bg);font-size:18px
 <footer>
   <div class="wrap">
     <div><b>Reconciliaciones Sistémicas con Caballos</b><br>Una metodología creada por Jimena Marchisio · MindCompass</div>
-    <div>16 al 21 de febrero · Vedia, Buenos Aires, Argentina</div>
+    <div>16 al 21 de febrero de 2027 · Vedia, Buenos Aires, Argentina<br>WhatsApp <a href="https://wa.me/34611558575" target="_blank" rel="noopener">+34 611 55 85 75</a> · <a href="https://wa.me/50765637838" target="_blank" rel="noopener">+507 6563-7838</a></div>
   </div>
 </footer>
 
@@ -604,8 +608,8 @@ footer b{font-family:var(--serif);font-weight:500;color:var(--bg);font-size:18px
 
 <script>
 // Número de WhatsApp en formato internacional, sin "+" ni espacios (ej: 5491112345678)
-const WHATSAPP = "";
-const DEFAULT_MSG = "Hola Jimena! Quiero recibir información sobre la formación de Reconciliaciones Sistémicas con Caballos (16 al 21 de febrero).";
+const WHATSAPP = "34611558575";
+const DEFAULT_MSG = "Hola Jimena! Quiero recibir información sobre la formación de Reconciliaciones Sistémicas con Caballos (16 al 21 de febrero de 2027).";
 
 if (WHATSAPP) {
   document.querySelectorAll(".js-wa").forEach(a => {
