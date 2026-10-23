@@ -5,7 +5,7 @@ Los archivos están en `ig/out/`:
 
 - `carruseles/<nombre>/01.png … NN.png`: 1080×1350 (4:5). Subir en orden.
 - `posts/*.png`: 1080×1350, publicaciones sueltas.
-- `reels/*.mp4`: 1080×1920, sin música. Agregar un audio de la biblioteca de Instagram al subirlos (algo instrumental, suave).
+- `reels/*.mp4`: 1080×1920, con música original (sintetizada, sin derechos de autor) y efectos sincronizados con cada animación. Al subirlos no hace falta agregar audio; si se prefiere un audio en tendencia de Instagram, bajar el volumen del original a 0.
 
 **Antes de publicar:** poner en la bio el link a la landing → https://sbelaustegui.github.io/reconciliaciones-sistemicas/
 (todos los cierres dicen "Info y reservas: link en la bio").
@@ -142,7 +142,7 @@ El caballo muestra lo que la palabra no puede nombrar. 🐴
 
 ## Reels
 
-### `reels/1-comprender.mp4` (24 s)
+### `reels/1-comprender.mp4` (23 s)
 Puedes explicar tu historia de memoria… y aun así repetir lo mismo. Comprender no siempre transforma. La experiencia sí. 🐴
 Formación intensiva residencial · 16 al 21 de febrero de 2027 · Link en la bio.
 
@@ -150,10 +150,10 @@ Formación intensiva residencial · 16 al 21 de febrero de 2027 · Link en la bi
 El caballo no analiza, no interpreta y no juzga. Responde a la coherencia entre intención, emoción y presencia. 🤍
 #reconciliacionessistemicas #caballos
 
-### `reels/3-anuncio.mp4` (28 s)
+### `reels/3-anuncio.mp4` (26 s)
 Inscripciones abiertas ✨ Seis días de inmersión con caballos en Vedia, Argentina, del 16 al 21 de febrero de 2027. Con Jimena Marchisio y Maika Castillo. Pago anticipado: USD 1.200. Plazas limitadas, link en la bio.
 
-### `reels/4-principios.mp4` (29 s)
+### `reels/4-principios.mp4` (27 s)
 Los 6 principios de las Reconciliaciones Sistémicas con Caballos en menos de 30 segundos. ¿Cuál resuena más contigo? 👇
 
 ---
@@ -165,8 +165,10 @@ Desde `ig/`:
 ```bash
 npm install
 npm run studio          # vista previa interactiva de todo
+npm run music           # genera la música de los reels (public/music/*.wav, requiere numpy y scipy)
 npm run render          # renderiza todo a out/
 node render.mjs car-2   # solo un carrusel / post / reel (filtra por id)
 ```
 
 Los textos están en `src/content.ts` (carruseles y posts) y en `src/Reels.tsx` (reels).
+La línea de tiempo de los reels (duración de cada escena, transiciones y en qué frame suena cada efecto) está en `src/reels.json`, que leen tanto las animaciones como `scripts/music.py`. Si se cambia una duración, volver a correr `npm run music` antes de renderizar.

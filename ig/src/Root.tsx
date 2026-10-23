@@ -2,7 +2,7 @@ import React from 'react';
 import {Composition, Still} from 'remotion';
 import {carousels, posts} from './content';
 import {Post} from './Post';
-import {FPS, Reel, reels, totalFrames} from './Reels';
+import {FPS, Reel, reelDuration, reelNames} from './Reels';
 
 const pad = (n: number) => String(n).padStart(2, '0');
 
@@ -17,8 +17,8 @@ export const Root: React.FC = () => (
 		{Object.entries(posts).map(([name, slide]) => (
 			<Still key={name} id={`post-${name}`} component={Post} width={1080} height={1350} defaultProps={{slide, index: 0, total: 1}} />
 		))}
-		{Object.keys(reels).map((name) => (
-			<Composition key={name} id={`reel-${name}`} component={Reel} width={1080} height={1920} fps={FPS} durationInFrames={totalFrames(reels[name])} defaultProps={{name}} />
+		{reelNames.map((name) => (
+			<Composition key={name} id={`reel-${name}`} component={Reel} width={1080} height={1920} fps={FPS} durationInFrames={reelDuration(name)} defaultProps={{name}} />
 		))}
 	</>
 );

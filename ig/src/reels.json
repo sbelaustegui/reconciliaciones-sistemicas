@@ -1,0 +1,53 @@
+{
+  "_comment": "Shared timeline for Reels.tsx (visuals) and scripts/music.py (soundtrack). Scene sfx frames are local to the scene and must match the animation delays in Reels.tsx.",
+  "fps": 30,
+  "transition": 15,
+  "reels": {
+    "1-comprender": {
+      "transitions": ["fade", "wipe:from-bottom", "slide:from-bottom", "wipe:from-right", "fade"],
+      "scenes": [
+        {"id": "hook", "frames": 150, "sfx": [["tick", 6], ["tick", 32], ["tick", 58], ["scratch", 92], ["scratch", 100], ["scratch", 108]]},
+        {"id": "dinamicas", "frames": 95, "sfx": []},
+        {"id": "experiencia", "frames": 125, "sfx": [["chime", 55]]},
+        {"id": "cuerpo", "frames": 125, "sfx": [["shimmer", 6]]},
+        {"id": "pilares", "frames": 105, "sfx": [["pop", 10], ["pop", 32], ["pop", 54]]},
+        {"id": "end", "frames": 150, "sfx": [["swell", 0], ["pop", 50]]}
+      ]
+    },
+    "2-caballo": {
+      "transitions": ["fade", "wipe:from-right", "slide:from-bottom", "fade"],
+      "scenes": [
+        {"id": "ojo", "frames": 160, "sfx": [["tick", 10], ["tick", 55], ["tick", 95]]},
+        {"id": "coherencia", "frames": 115, "sfx": [["chime", 18], ["chime2", 38], ["chime3", 58]]},
+        {"id": "espejo", "frames": 125, "sfx": [["shimmer", 6]]},
+        {"id": "frase", "frames": 110, "sfx": []},
+        {"id": "end", "frames": 150, "sfx": [["swell", 0], ["pop", 50]]}
+      ]
+    },
+    "3-anuncio": {
+      "transitions": ["fade", "slide:from-right", "wipe:from-bottom", "slide:from-bottom", "wipe:from-right", "fade"],
+      "scenes": [
+        {"id": "intro", "frames": 115, "sfx": [["swell", 4]]},
+        {"id": "dias", "frames": 100, "sfx": [["tick", 10], ["tick", 14], ["tick", 18], ["tick", 23], ["tick", 29], ["chime", 38]]},
+        {"id": "fechas", "frames": 115, "sfx": [["tick", 30], ["tick", 36], ["tick", 42], ["tick", 48], ["tick", 54], ["chime", 60]]},
+        {"id": "equipo", "frames": 135, "sfx": [["pop", 8], ["pop", 20]]},
+        {"id": "incluye", "frames": 130, "sfx": [["pop", 14], ["pop", 26], ["pop", 38], ["pop", 50], ["pop", 62]]},
+        {"id": "precio", "frames": 120, "sfx": [["scratch", 30], ["chime", 42], ["pop", 62]]},
+        {"id": "end", "frames": 150, "sfx": [["swell", 0], ["pop", 50]]}
+      ]
+    },
+    "4-principios": {
+      "transitions": ["fade", "slide:from-right", "slide:from-right", "slide:from-right", "slide:from-right", "slide:from-right", "fade"],
+      "scenes": [
+        {"id": "intro", "frames": 100, "sfx": [["chime", 30]]},
+        {"id": "p1", "frames": 110, "sfx": [["pop", 4], ["shimmer", 46]]},
+        {"id": "p2", "frames": 110, "sfx": [["pop", 4], ["shimmer", 46]]},
+        {"id": "p3", "frames": 110, "sfx": [["pop", 4], ["shimmer", 46]]},
+        {"id": "p4", "frames": 110, "sfx": [["pop", 4], ["shimmer", 46]]},
+        {"id": "p5", "frames": 110, "sfx": [["pop", 4], ["shimmer", 46]]},
+        {"id": "p6", "frames": 110, "sfx": [["pop", 4], ["shimmer", 46]]},
+        {"id": "end", "frames": 150, "sfx": [["swell", 0], ["pop", 50]]}
+      ]
+    }
+  }
+}
