@@ -129,7 +129,7 @@ export const PhotoBg: React.FC<{src: string; dur: number; pos?: string; from?: n
 
 /* ---------- text ---------- */
 
-/** Words rise one by one, from blurred to sharp */
+/** Words fade and rise in one by one */
 export const RevealWords: React.FC<{
 	text: string;
 	delay?: number;
@@ -168,7 +168,6 @@ export const RevealWords: React.FC<{
 							display: 'inline-block',
 							opacity: p,
 							transform: `translateY(${(1 - p) * 50}px)`,
-							filter: `blur(${(1 - p) * 14}px)`,
 							color: accent.includes(i) ? accentColor : undefined,
 							fontStyle: accent.includes(i) ? 'italic' : undefined,
 						}}
@@ -214,7 +213,7 @@ export const LetterStagger: React.FC<{text: string; delay?: number; size?: numbe
 						{word.split('').map((ch, ci) => {
 							const p = interpolate(frame - delay - (offset + ci) * perLetter, [0, 14], [0, 1], {...clamp, easing: Easing.out(Easing.back(1.8))});
 							return (
-								<span key={ci} style={{display: 'inline-block', opacity: Math.min(1, p * 1.5), transform: `translateY(${(1 - p) * 40}px)`, filter: `blur(${(1 - Math.min(1, p)) * 6}px)`}}>
+								<span key={ci} style={{display: 'inline-block', opacity: Math.min(1, p * 1.5), transform: `translateY(${(1 - p) * 40}px)`}}>
 									{ch}
 								</span>
 							);
