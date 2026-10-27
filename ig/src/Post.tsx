@@ -176,14 +176,14 @@ const ImageSlide: React.FC<Extract<Slide, {kind: 'image'}>> = ({eyebrow, title, 
 
 const Person: React.FC<Extract<Slide, {kind: 'person'}>> = ({photo, photoPos, role, name, org, body}) => (
 	<AbsoluteFill>
-		<div style={{height: 780, overflow: 'hidden'}}>
+		<div style={{height: 660, overflow: 'hidden'}}>
 			<Img src={staticFile(photo)} style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: photoPos ?? 'center'}} />
 		</div>
 		<div style={{padding: `56px ${PAD}px`}}>
 			<div style={{fontFamily: F.sans, fontWeight: 600, fontSize: 22, letterSpacing: '0.22em', textTransform: 'uppercase', color: C.terra}}>{role}</div>
 			<div style={{fontFamily: F.serif, fontWeight: 500, fontSize: 76, color: C.ink, marginTop: 14, lineHeight: 1.1}}>{name}</div>
 			<div style={{fontFamily: F.serif, fontStyle: 'italic', fontSize: 34, color: C.muted, marginTop: 8}}>{org}</div>
-			<div style={{fontFamily: F.sans, fontSize: 32, lineHeight: 1.5, color: C.ink2, marginTop: 26}}>{body}</div>
+			<div style={{fontFamily: F.sans, fontSize: 30, lineHeight: 1.45, color: C.ink2, marginTop: 22}}>{body}</div>
 		</div>
 	</AbsoluteFill>
 );

@@ -25,7 +25,7 @@ export const carousels: Record<string, Slide[]> = {
 		{kind: 'list', eyebrow: 'Pilar 01 · El sistema', title: 'Todo ser humano forma parte de múltiples sistemas.', items: ['Familia', 'Cultura', 'Historia', 'Relaciones'], chips: true},
 		{kind: 'list', eyebrow: 'Pilar 02 · El cuerpo', tone: 'sand', title: 'El cuerpo conserva lo que la narrativa no alcanza a expresar.', items: ['La postura', 'La respiración', 'La tensión muscular', 'La distancia interpersonal']},
 		{kind: 'statement', eyebrow: 'Pilar 03 · El caballo', tone: 'dark', title: 'No analiza. No interpreta. No juzga.', body: ['Responde a la coherencia entre intención, emoción y presencia.'], size: 84},
-		{kind: 'image', eyebrow: 'La integración en la pista', title: 'Donde las tres dimensiones se encuentran', image: 'slide-integracion.jpg', body: 'Cuando sistema, cuerpo y caballo se encuentran, emerge el espacio para la reconciliación.'},
+		{kind: 'image', eyebrow: 'La integración en la naturaleza', title: 'Donde las tres dimensiones se encuentran', image: 'slide-integracion.jpg', body: 'Cuando sistema, cuerpo y caballo se encuentran, emerge el espacio para la reconciliación.'},
 		{kind: 'cta'},
 	],
 	'4-reconciliar': [
@@ -38,7 +38,7 @@ export const carousels: Record<string, Slide[]> = {
 	],
 	'5-formacion': [
 		{kind: 'cover', eyebrow: 'Formación intensiva · Residencial', title: 'Reconciliaciones Sistémicas', italic: 'con Caballos', photo: 'hero-caballo.jpg', sub: '16 al 21 de febrero de 2027 · Vedia, Argentina'},
-		{kind: 'list', eyebrow: 'La experiencia', title: 'Seis días de inmersión.', items: ['Un entorno natural cuidadosamente seleccionado', 'Prácticas en pista con caballos', 'Momentos de reflexión e integración', 'Convivencia grupal', 'Tiempo para atravesar tu propio proceso']},
+		{kind: 'list', eyebrow: 'La experiencia', title: 'Seis días de inmersión.', items: ['Un entorno natural cuidadosamente seleccionado', 'Prácticas en la naturaleza con caballos', 'Momentos de reflexión e integración', 'Convivencia grupal', 'Tiempo para atravesar tu propio proceso']},
 		{kind: 'list', eyebrow: 'Programa', tone: 'sand', title: '¿Qué aprenderás?', items: ['Fundamentos de las reconciliaciones sistémicas', 'Patrones corporales y la historia relacional', 'El caballo como facilitador fenomenológico', 'Coherencia cardíaca y recalibración energética', 'Diseño de experiencias vivenciales']},
 		{kind: 'list', eyebrow: '¿Para quién es?', title: 'Profesionales y personas en búsqueda.', items: ['Psicólogos', 'Terapeutas', 'Coaches', 'Educadores', 'Facilitadores', 'Profesionales ecuestres', 'Desarrollo humano', 'Desarrollo personal'], chips: true},
 		{kind: 'list', eyebrow: 'Incluye', tone: 'dark', title: 'Todo lo que necesitas.', items: ['Formación presencial intensiva', 'Trabajo práctico con caballos', 'Materiales de estudio', 'Alojamiento y pensión completa', 'Certificado de participación']},
@@ -48,7 +48,7 @@ export const carousels: Record<string, Slide[]> = {
 	'6-equipo': [
 		{kind: 'cover', eyebrow: 'Equipo docente', title: 'Quién guía', italic: 'la formación.', photo: 'jimena.jpg', photoPos: '40% 50%', sub: 'Conócelas →'},
 		{kind: 'person', photo: 'jimena.jpg', photoPos: '50% 42%', role: 'Directora · Creadora del método', name: 'Jimena Marchisio', org: 'Fundadora de MindCompass', body: 'Docente universitaria, profesional ecuestre y diseñadora de experiencias de aprendizaje asistidas por caballos.'},
-		{kind: 'person', photo: 'maika.jpg', photoPos: '50% 38%', role: 'Docente invitada', name: 'Maika Castillo', org: 'Fundadora de Sentir Caballos', body: 'Acompañamiento humano, sanación con caballos, coherencia cardíaca y reequilibrio energético.'},
+		{kind: 'person', photo: 'maika.jpg', photoPos: '50% 62%', role: 'Docente invitada', name: 'Maika Castillo', org: 'Fundadora de Sentir Caballos', body: 'Apasionada de los caballos, de la transformación personal, y la integridad del ser. Experta en etología equina y equinoterapia, facilitadora de constelaciones sistémicas, sanación cénturi, coherencia cardiaca, coaching con caballos y recalibración energética.'},
 		{kind: 'cta'},
 	],
 };

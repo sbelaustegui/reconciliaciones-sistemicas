@@ -101,7 +101,7 @@ Quién guía la formación 🌿
 
 Jimena Marchisio (@mindcompass.pty) es creadora de la metodología Reconciliaciones Sistémicas con Caballos. Es docente universitaria, profesional ecuestre y diseñadora de experiencias de aprendizaje asistidas por caballos.
 
-Maika Castillo (@sentir_caballos) es fundadora de Sentir Caballos y aporta su experiencia en acompañamiento humano, sanación con caballos, coherencia cardíaca y reequilibrio energético.
+Maika Castillo (@sentir_caballos) es fundadora de Sentir Caballos. Apasionada de los caballos, de la transformación personal y la integridad del ser, es experta en etología equina y equinoterapia, facilitadora de constelaciones sistémicas, sanación cénturi, coherencia cardiaca, coaching con caballos y recalibración energética.
 
 Te esperamos del 16 al 21 de febrero de 2027 en Vedia, Argentina. Link en la bio.
 
